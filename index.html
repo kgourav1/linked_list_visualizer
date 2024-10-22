@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sum of Last N Nodes Using Pointers</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-left">
+        <a
+          href="https://www.youtube.com/channel/UCgYAtmS-eODGzOH28yPaa9g"
+          target="_blank"
+          >Let's Practice Together</a
+        >
+      </div>
+      <div class="navbar-center">
+        <span>POTD Visualizer</span>
+      </div>
+    </nav>
+
+    <!-- Container -->
+    <div class="container">
+      <h1>Sum of Last N Nodes Using Slow and Fast Pointers</h1>
+
+      <!-- Input section -->
+      <div class="input-section">
+        <label for="linked-list">Enter Linked List (comma separated):</label>
+        <input type="text" id="linked-list" placeholder="e.g., 5,9,6,3,4,10" />
+        <label for="n-value">Enter N:</label>
+        <input type="number" id="n-value" placeholder="e.g., 3" min="1" />
+        <button id="calculate-btn">Calculate Sum</button>
+      </div>
+
+      <!-- Visualization section -->
+      <div class="visualization">
+        <h2>Linked List Visualization</h2>
+        <div id="linked-list-display"></div>
+      </div>
+
+      <!-- Animation for Fast Pointer -->
+      <div class="animation-section">
+        <h2>Lets move fast pointer till "n"</h2>
+        <div id="fast-pointer-animation"></div>
+        <div id="fast-pointer-steps"></div>
+      </div>
+
+      <!-- Visualization section -->
+      <div class="visualization">
+        <h2>Linked List Visualization</h2>
+        <div id="linked-list-display-2"></div>
+      </div>
+
+      <!-- Animation for Slow Pointer -->
+      <div class="animation-section">
+        <h2>
+          Now start slow pointer and subtract it from Total Sum and keep adding
+          fast pointer
+        </h2>
+        <div id="slow-pointer-animation"></div>
+        <div id="slow-pointer-steps"></div>
+      </div>
+
+      <!-- Final Result -->
+      <div class="steps-section">
+        <h2>Final Result</h2>
+        <p id="sum-display">Sum: 0</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

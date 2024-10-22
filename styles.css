@@ -1,0 +1,143 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f7f6;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 60px;
+  padding: 20px;
+  color: #333;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #007bff;
+  padding: 15px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  z-index: 1000;
+
+  a {
+    color: white;
+  }
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 80px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.input-section {
+  margin-bottom: 20px;
+}
+
+.input-section input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.visualization,
+.animation-section,
+.steps-section {
+  margin-top: 20px;
+}
+
+#linked-list-display,
+#linked-list-display-2 {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.node,
+.node2 {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  width: 40px;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.node.highlight {
+  background-color: #ff9800;
+  transform: scale(1.2);
+}
+
+.node2.highlight {
+  background-color: #ff9800 !important;
+  transform: scale(1.2);
+}
+
+.node2.highlight2 {
+  background-color: #49d630;
+  transform: scale(1.2);
+}
+
+.animation-section {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.pointer-info {
+  border: 1px solid #007bff;
+  background-color: #e7f3ff;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.pointer-info strong {
+  color: #0056b3;
+}
+
+#sum-display {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
