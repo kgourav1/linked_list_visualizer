@@ -104,12 +104,12 @@ button:hover {
 }
 
 .node.highlight {
-  background-color: #ff9800;
+  background-color: #49d630;
   transform: scale(1.2);
 }
 
 .node2.highlight {
-  background-color: #ff9800 !important;
+  background-color: #e72737 !important;
   transform: scale(1.2);
 }
 
@@ -140,4 +140,9 @@ button:hover {
 #sum-display {
   font-size: 1.5rem;
   margin-top: 20px;
+}
+
+.disable {
+  pointer-events: none;
+  background-color: grey;
 }

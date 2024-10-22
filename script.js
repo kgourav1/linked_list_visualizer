@@ -1,9 +1,17 @@
 // Handle button click to calculate the sum of last N nodes
+let sum = 0;
 document.getElementById("calculate-btn").addEventListener("click", () => {
   const linkedListInput = document.getElementById("linked-list").value;
   const nValue = parseInt(document.getElementById("n-value").value);
+  sum = 0;
+  document.getElementById("fast-pointer-steps").innerHTML = "";
+  document.getElementById("slow-pointer-steps").innerHTML = "";
+  document.getElementById("linked-list-display").innerHTML = "";
+  document.getElementById("linked-list-display-2").innerHTML = "";
+  document.getElementById("sum-display").innerText = "";
 
   if (linkedListInput && nValue > 0) {
+    document.getElementById("calculate-btn").classList.add("disable");
     const linkedList = linkedListInput.split(",").map(Number); // Convert input to array of numbers
     visualizeLinkedList(linkedList);
     animateFastPointer(linkedList, nValue);
@@ -11,8 +19,6 @@ document.getElementById("calculate-btn").addEventListener("click", () => {
     alert("Please enter a valid linked list and N value.");
   }
 });
-
-let sum = 0;
 
 // Function to visualize the linked list
 function visualizeLinkedList(linkedList) {
@@ -101,6 +107,7 @@ function animateSlowPointer(linkedList, fastIdx) {
     } else {
       clearInterval(intervalId); // Stop when fast pointer reaches the end
       document.getElementById("sum-display").innerText = `Sum: ${sum}`;
+      document.getElementById("calculate-btn").classList.remove("disable");
     }
   }, 2000); // Adjust delay time (1500ms = 1.5 seconds) for visual effect
 }
